@@ -1,8 +1,8 @@
 <div class="main" role="main">
   <div class="container">
-    <div style="display: flex" >
-      <div class="cards">
-        <img *ngFor="let content of contentArray" src="{{ content.url }}" alt="image" height="350px" class="card">
+    <div style="display: flex" class="cards">
+      <div class="card" *ngFor="let content of contentArray">
+        <img src="{{ content.url }}" alt="image" height="350px" class="image">
       </div>
     </div>
   </div>
