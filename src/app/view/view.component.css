@@ -130,3 +130,11 @@
   stroke-dashoffset: 0;
   opacity: 1;
 }
+
+.video-player-wrapper {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 5rem;
+  border: 2px solid #A37E2B;
+}

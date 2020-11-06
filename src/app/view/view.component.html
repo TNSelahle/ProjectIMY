@@ -5,7 +5,7 @@
       <div class="details">
         <h1>{{content.title}}</h1>
         <p>{{content.description}}</p>
-        <a href="#" class="playBut" id="myBtn">
+        <a class="playBut" id="myBtn" (click)="toggleVideo()">
           <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
           <svg
             version="1.1"
@@ -48,14 +48,38 @@
         </a>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <div class="modal-content" id="content">
-        <span class="close">&times;</span>
-        <!-- video -->
-        <video width="853" height="480" id="myVideo">
-          <source src="{{content.vid}}" type="video/mp4" />
+    <div class="video-player-wrapper" *ngIf="show">
+      <vg-player>
+        <vg-overlay-play></vg-overlay-play>
+        <vg-buffering></vg-buffering>
+
+        <vg-scrub-bar>
+          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+          <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+        </vg-scrub-bar>
+
+        <vg-controls>
+          <vg-play-pause></vg-play-pause>
+          <vg-playback-button></vg-playback-button>
+
+          <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+
+          <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+
+          <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+          <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+
+          <vg-track-selector></vg-track-selector>
+          <vg-mute></vg-mute>
+          <vg-volume></vg-volume>
+
+          <vg-fullscreen></vg-fullscreen>
+        </vg-controls>
+
+        <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
+          <source src="{{ content.vid }}" type="video/mp4">
         </video>
-      </div>
+      </vg-player>
     </div>
   </div>
 </div>
