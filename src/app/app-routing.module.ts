@@ -9,7 +9,7 @@ import { ViewComponent } from './view/view.component';
 const routes: Routes = [
   { path: '',
     component: LandingComponent,
-    data: { animationState: 'Land' }
+    data: { animationState: 'Landing' }
   },
   { path: 'Hub',
     component: HubComponent,

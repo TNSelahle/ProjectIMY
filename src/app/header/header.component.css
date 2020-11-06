@@ -9,7 +9,11 @@
 .logo {
   float: left;
   position: relative;
-  margin: 6vh 15px 6vh 10px;
+  transition: 0.1s;
+}
+
+.header-wrap {
+  margin: 2rem;
 }
 
 nav {
@@ -20,7 +24,7 @@ nav {
 }
 
 ul.nav-menu {
-  margin: 6vh 15px 6vh 10px;
+  margin: 3vh 15px 3vh 10px;
 }
 
 .nav-menu li {
@@ -31,4 +35,13 @@ ul.nav-menu {
 a:link, a:visited, a:active {
   color: white;
   text-decoration: none;
+}
+
+.btn:hover {
+  color: #A37E2B;
+}
+
+.logo:hover {
+  transform: scale(1.4);
+  transition: 0.2s;
 }

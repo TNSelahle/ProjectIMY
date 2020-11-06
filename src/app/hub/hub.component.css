@@ -46,6 +46,12 @@
   box-shadow: 4px 4px 15px 15px rgba(0, 0, 0, 0.75);
 }
 
+.image,
+.card {
+  border: none;
+  outline: none;
+}
+
 .card:not(:first-child) {
   margin-left: -4rem;
 }
