@@ -9,6 +9,13 @@ import { LandingComponent } from './landing/landing.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { MaterialElevationDirective } from './directives/material-elevation.directive';
+import { ViewComponent } from './view/view.component';
+import { HeaderComponent } from './header/header.component';
+
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
+import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 
 @NgModule({
   declarations: [
@@ -16,13 +23,19 @@ import { MaterialElevationDirective } from './directives/material-elevation.dire
     HubComponent,
     AboutUsComponent,
     LandingComponent,
-    MaterialElevationDirective
+    MaterialElevationDirective,
+    ViewComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 0 0 5rem;
+  display: grid;
+  place-items: center;
+  float: left;
+}
+
+.card {
+  display: flex;
+}
+
+.details {
+  padding: 1rem 3rem;
+}
+
+

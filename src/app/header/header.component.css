@@ -1,0 +1,34 @@
+.header {
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  background: transparent;
+}
+
+.logo {
+  float: left;
+  position: relative;
+  margin: 6vh 15px 6vh 10px;
+}
+
+nav {
+  display: flex;
+  float: right;
+  position: relative;
+  margin-right: 4rem;
+}
+
+ul.nav-menu {
+  margin: 6vh 15px 6vh 10px;
+}
+
+.nav-menu li {
+  display: inline;
+  margin: 1rem;
+}
+
+a:link, a:visited, a:active {
+  color: white;
+  text-decoration: none;
+}
