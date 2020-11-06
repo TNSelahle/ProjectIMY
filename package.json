@@ -24,6 +24,7 @@
     "@syncfusion/ej2-angular-grids": "^18.3.47",
     "@syncfusion/ej2-layouts": "^18.3.47",
     "@videogular/ngx-videogular": "^2.1.0",
+    "express": "^4.17.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "videogular": "^2.2.1",
